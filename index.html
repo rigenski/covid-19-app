@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        #title-country{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+        }
+        .card-header{
+            font-size: 1.6em;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 500;
+        }
+
+        .card-title{
+            font-size: 3em;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light shadow-sm">
+        <div class="container">
+        <a class="navbar-brand">Corona App</a>
+        <form class="form-inline">
+            <input id="input-search" class="form-control" type="search" placeholder="Search Country" aria-label="Search">
+        </form>
+        </div>
+    </nav>
+
+    <!-- title -->
+        <div class="row mt-4"></div>
+        <div id="title-country"></div>
+        
+
+    <!-- card -->
+    
+        <card>
+            <div class="container"></div>
+                <div class="row mt-4">
+                    <div class="col-3"></div>
+                        <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Positif</div>
+                            <div class="card-body">
+                                <h5 id="positif" class="card-title">1</h5>
+                                <p class="card-text">Lorem Ipsum</p>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Sembuh</div>
+                            <div class="card-body">
+                                <h5 id="sembuh"  class="card-title">2</h5>
+                                <p class="card-text">Lorem Ipsum</p>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Meninggal</div>
+                            <div class="card-body">
+                                <h5 id="meninggal" class="card-title">3</h5>
+                                <p class="card-text">Lorem Ipsum</p>
+                            </div>
+                        </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </card>
+ 
+    
+
+
+
+
+<script src="./assets/script.js"></script>
+</body>
+</html>
