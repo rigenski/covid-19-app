@@ -1,101 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corona App</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        nav a{
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 600;
-        }
-        #title-global{
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 700;
-            font-size: 30px;
-        }
-        .card-header{
-            font-size: 1.6em;
-            text-align: center;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 500;
-        }
+      nav a {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+      }
+      #title-global {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      .card-header {
+        font-size: 1.6em;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+      }
 
-        .card-title{
-            font-size: 3em;
-            text-align: center;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 700;
-        }
+      .card-title {
+        font-size: 3em;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+      }
 
-        .card-text{
-            font-size: 2em;
-            font-family: 'Quicksand', sans-serif;
-        }
-        
-
-
+      .card-text {
+        font-size: 2em;
+        font-family: "Quicksand", sans-serif;
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- navbar -->
 
     <nav class="navbar navbar-light bg-light shadow-sm">
-        <div class="container">
+      <div class="container">
         <a class="navbar-brand">COVID-19</a>
-        <form class="form-inline">
-            <input id="input-keyword" class=" form-control mr-sm-4 " type="search" placeholder="Cari Negara" aria-label="Search">
-            <button id="search-button" class=" btn my-2 my-sm-0 btn-primary" type="submit">Search</button>
-        </form>
-        </div>
+      </div>
     </nav>
-    
+
     <!-- title -->
 
     <div class="container">
-        <div class="row mt-4 mb-3"></div>
-        <div id="title-global" class="text-center">Global</div>
+      <div class="row mt-4 mb-3"></div>
+      <div id="title-global" class="text-center">Global</div>
     </div>
 
     <!-- card -->
-    <div class="container"> 
-        <card>
-            <div class="row mt-4 mb-3 text-center">
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card text-white bg-warning mb-3" style="max-height: 18rem;">
-                            <div class="card-header">Positif</div>
-                            <div class="card-body">
-                                <h5 id="positif" class="card-title">Loading...</h5>
-                                <p id="newPositif"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card text-white bg-success mb-3" style="max-height: 18rem;">
-                            <div class="card-header">Sembuh</div>
-                            <div class="card-body">
-                                <h5 id="sembuh"  class="card-title">Loading...</h5>
-                                <p id="newSembuh"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card text-white bg-danger mb-3" style="max-height: 18rem;">
-                            <div class="card-header">Meninggal</div>
-                            <div class="card-body">
-                                <h5 id="meninggal" class="card-title">Loading...</h5>
-                                <p id="newMeninggal"></p>
-                            </div>
-                        </div>
-                    </div>                              
+    <div class="container">
+      <card>
+        <div class="row mt-4 mb-3 text-center">
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card text-white bg-warning mb-3"
+              style="max-height: 18rem"
+            >
+              <div class="card-header">Positif</div>
+              <div class="card-body">
+                <h5 id="positif" class="card-title">Loading...</h5>
+                <p id="newPositif"></p>
+              </div>
             </div>
-        </card>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card text-white bg-success mb-3"
+              style="max-height: 18rem"
+            >
+              <div class="card-header">Sembuh</div>
+              <div class="card-body">
+                <h5 id="sembuh" class="card-title">Loading...</h5>
+                <p id="newSembuh"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card text-white bg-danger mb-3"
+              style="max-height: 18rem"
+            >
+              <div class="card-header">Meninggal</div>
+              <div class="card-body">
+                <h5 id="meninggal" class="card-title">Loading...</h5>
+                <p id="newMeninggal"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </card>
     </div>
 
-
-<script src="./assets/script.js"></script>
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>

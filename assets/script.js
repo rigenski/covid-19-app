@@ -9,9 +9,7 @@
 //             const res = await req.json();
 //             res.Search.forEach(covid => {
                 
-//                 for(let i in covid.list_data){
-//                     console.log(`${covid.list_data[i].key}`);
-//                     }
+//                 regency.innerHTML = covid.data_list.key = inputKeyword;
 //             })
 //         } catch(error) {
 //             console.log(error);
